@@ -1,0 +1,43 @@
+@mixin list_reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@mixin a_reset{
+    text-decoration: none;
+}
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+@mixin media-breakpoint-up($breakpoint) {
+    @if map-has-key($grid-breakpoints, $breakpoint) {
+        $min-width: map-get($grid-breakpoints, $breakpoint);
+        @media (min-width: $min-width) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint #{$breakpoint} not found in \$grid-breakpoints map.";
+    }
+}
+
+@mixin media-breakpoint-down($breakpoint) {
+    @if map-has-key($grid-breakpoints, $breakpoint) {
+        $max-width: map-get($grid-breakpoints, $breakpoint);
+        @media (max-width: $max-width) {
+            @content;
+        }
+    } @else {
+        @warn "Breakpoint #{$breakpoint} not found in \$grid-breakpoints map.";
+    }
+}
+
+
+
+  

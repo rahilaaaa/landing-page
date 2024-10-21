@@ -1,0 +1,26 @@
+.img-info-section{
+    margin: 60px 0;
+    @include media-breakpoint-up(sm) {
+        margin: 120px 0;
+    }
+    .primary-btn{
+        margin-top: 30px;
+        @include media-breakpoint-up(xl) {
+           margin-top: 45px;
+        }
+    }
+    img{
+        @include media-breakpoint-up(sm) {
+            transform: translateX(-56px);
+            // margin-left: 178px;
+        }
+    }
+    .flex-row-reverse{
+        img{
+            @include media-breakpoint-up(sm) {
+                transform: translateX(150px);
+                // margin-left: 178px;
+            }
+        }
+    }
+}

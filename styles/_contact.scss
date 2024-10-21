@@ -1,0 +1,38 @@
+#contact {
+    background-color: $primary-color;
+    color: #fff;
+    padding: 2em;
+    text-align: center;
+
+    .contact-container {
+        max-width: 600px;
+        margin: 0 auto;
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+
+            .form-group {
+                margin-bottom: 1.5em;
+
+                label {
+                    margin-bottom: 0.5em;
+                    font-weight: bold;
+                }
+
+                input, textarea {
+                    width: 100%; /* Full width of the form group */
+                    padding: 0.5em;
+                    border: none;
+                    border-radius: 5px;
+                    font-size: 1em;
+                    background-color: #fff5f5e8;
+                    color: #fff;
+                }
+            }
+
+             }
+            
+        }
+    }
+

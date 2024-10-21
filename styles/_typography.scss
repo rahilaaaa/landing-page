@@ -1,0 +1,29 @@
+h1 {
+    font-weight: $font-bold;
+    @include media-breakpoint-up(sm){
+        font-size: 35px;
+        line-height: 50px;
+    }
+    @include media-breakpoint-up(xl){
+        font-size: 50px;
+        line-height: 70px;
+    }
+}
+
+h2 .title {
+   color: $primary-color;
+   font-size: 32px;
+   font-weight:$font-bold;
+   @include media-breakpoint-up(xl) {
+    font-size: 40px;
+    }
+}
+
+p{
+    color:$text-color;
+    
+}
+h3{
+    font-size: 20px;
+   color: $primary-color;
+}

@@ -1,0 +1,42 @@
+.primary-btn{
+    transition: color ease 0.3s;
+   button{
+    color: white;
+    margin-top: 15px;
+   }
+   &:hover{
+    color: $primary-color;
+   }
+}
+
+.secondary-btn {
+    font-size: 14px;
+    color: $primary-color-light;
+    text-transform: capitalize;
+    position: relative;
+    transition: color ease 0.3s;
+    
+    @include media-breakpoint-up(xl) {
+        font-size: 15px;
+    }
+
+    &::after {
+        content: '';
+        background: url(../img/logo/right-arrow.png) no-repeat center center;
+        background-size: contain; // Ensure the background image is contained within the specified width/height
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: translateX(20px);
+        transition: transform ease 0.4s;
+    }
+    &:hover{
+        color: $secondary-color;
+        &::after{
+            transform: translateX(25px);
+        }
+    }
+}

@@ -1,0 +1,38 @@
+html{
+    font-family: $primary-font;
+    font-weight: $font-normal;
+    font-size: 14px;
+    line-height: 26px;
+    scroll-behavior: smooth;
+}
+ul{
+    @include list_reset;
+}
+
+a, a:hover{
+    @include a_reset;
+}
+.d-flex {
+    @include media-breakpoint-up(sm) {
+        display: flex;
+        flex-direction: row; // Use row direction for larger screens
+    }
+    // @include media-breakpoint-down(sm) {
+    //     flex-direction: column; // Use column direction for smaller screens
+    // }
+}
+
+
+// section title
+
+.section-title{
+    max-width: 600px;
+    margin-bottom:0 auto  50px;
+    @include media-breakpoint-up(xl) {
+        max-width: 735;
+        margin-bottom:0 auto 60px;
+    }
+     
+      
+    
+}

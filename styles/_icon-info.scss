@@ -1,0 +1,125 @@
+.icon-info-section {
+    margin-top: 60px;
+
+    @include media-breakpoint-up(sm) {
+        margin-top: 80px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        margin-top: 100px;
+    }
+
+    .section-title {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .row {
+        text-align: center;
+        justify-content: center;
+        gap: 20px; // Add a gap between columns
+
+        @include media-breakpoint-down(sm) {
+            gap: 10px; // Smaller gap for small screens
+        }
+    }
+
+    .col-12 {
+        margin-bottom: 30px; // Add spacing between rows
+
+        .icon {
+            width: 75px;
+            height: 75px;
+            background-color: rgba($secondary-color, 0.05);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 18px;
+
+            @include media-breakpoint-up(md) {
+                width: 80px;
+                height: 80px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                margin-top: 18px;
+                width: 85px;
+                height: 85px;
+            }
+
+            i {
+                font-size: 1.5rem; // Default icon size
+                color: #FF9C00;
+
+                @include media-breakpoint-up(sm) {
+                    font-size: 1.75rem; // Slightly larger on small screens
+                }
+
+                @include media-breakpoint-up(xl) {
+                    font-size: 2rem; // Larger size for extra-large screens
+                }
+            }
+        }
+
+        .info {
+            max-width: 300px;
+            margin: 0 auto; // Center align the content
+
+            @include media-breakpoint-up(sm) {
+                max-width: 320px;
+            }
+
+            @include media-breakpoint-up(md) {
+                max-width: 340px;
+            }
+
+            @include media-breakpoint-up(xl) {
+                max-width: 360px;
+            }
+
+            h3 {
+                font-size: 1.25rem;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1.5rem;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    font-size: 1.75rem;
+                }
+            }
+
+            p {
+                font-size: 0.9rem;
+
+                @include media-breakpoint-up(sm) {
+                    font-size: 1rem;
+                }
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1.1rem;
+                }
+            }
+
+            .secondary-btn {
+                margin-top: 15px;
+                display: inline-block;
+                font-size: 0.85rem;
+                padding: 8px 15px;
+
+                @include media-breakpoint-up(sm) {
+                    font-size: 0.9rem;
+                    padding: 10px 20px;
+                }
+
+                @include media-breakpoint-up(md) {
+                    font-size: 1rem;
+                    padding: 12px 25px;
+                }
+            }
+        }
+    }
+}
+
+
